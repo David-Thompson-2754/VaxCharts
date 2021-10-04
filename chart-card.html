@@ -1,0 +1,210 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>An Integrated COVID-19 Vaccination Chart</title>
+<style type="text/css">
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px
+}
+.container {
+    margin:auto;
+    width: 600px
+}
+.content-container {
+padding-left:30px;
+}
+#top-banner {
+    padding: 20px;
+    border-top: 5px #000000 solid;
+    border-bottom: 1px solid #d5d7db;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px
+}
+#icon {
+    float: left;
+    margin-right: 10px;
+}
+.heading-left {
+    float:left;
+    font-weight: bold;
+    margin:20px;
+    width: 240px
+}
+.heading-right {
+    float:right;
+    text-align: right;
+    width: 240px;
+    margin:20px;
+}
+.measures {
+
+    float:left;
+    padding-top:20px;
+    padding-left:20px;
+    position:relative;
+    top: -65px;
+    margin-right: 15px;
+    
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+    position:relative;
+    left:-20px;
+    top:23px
+}
+.bar {
+    
+    height:25px;
+    position: relative
+}
+.grey {
+    background-color: #f4f5f7;    
+}
+.fullvax{
+    
+    position: relative;
+    top: -25px
+    
+}
+.halfvax {    
+    background-color: #b1d8fd;
+    
+}
+.fullvaxblue { 
+    background-color: #0053a6;
+}
+.halfvaxblue {
+    background-color: #b1d8fd;
+}
+
+.target70 {
+    position:relative;
+    top:-50px;
+    width:70%;
+    border-right:1px dashed #000;
+    z-index:10
+}
+.target80{
+    position:relative;
+    top:-75px;
+    width:80%;
+    border-right:1px dashed #000;
+    z-index:11
+}
+.label70 {
+
+    position:relative;
+    left:7%;
+    top: 25px
+}
+
+.label80 {
+
+    position:relative;
+    left:97%;
+    top: 25px
+}
+
+.card {
+    background-color: #f4f5f7;
+    height: 150px;
+    width:260px;
+    text-align:center;
+    vertical-align: middle;
+    float:left;
+    padding-top: 25px;
+    margin-left: 20px
+}
+
+
+</style>
+</head>
+
+<body>
+  
+<div class="container">
+
+    <div id="top-banner">
+        
+        <img src="covid.png" alt="COVID icon" id="icon" /> COVID-19 in Australia
+
+    </div>
+    
+    <div class="heading-left">Vaccine rollout</div>
+
+    <div class="heading-right"><a href="#">Full Data &gt;</a></div>
+
+    <div class="content-container">
+
+    <div class="heading-left">
+        <p>NSW</p>
+    </div>
+    <div style="clear:both"></div>
+
+    <div class="measures">
+        <div class="dot fullvaxblue"></div> <strong>67.1%</strong> fully vaccinated
+    </div>
+    <div class="measures">
+        <div class="dot halfvaxblue"></div> <strong>88.4%</strong> first dose
+    </div>
+
+    <div class="bar grey" style="width:100%">
+        
+        <div class="bar halfvax halfvaxblue" style="width:88%"></div>
+        <div class="bar fullvax fullvaxblue" style="width: 67%"></div>        
+        <div class="bar target70"><span class="label70">70%</span></div>
+        <div class="bar target80"><span class="label80">80%</span></div>
+
+    </div>
+
+    <div class="heading-left" style="margin-top: 50px">
+      <p>National</p>
+    </div>
+
+    <div style="clear:both"></div>
+
+    <div class="measures">
+        <div class="dot fullvaxblue"></div> <strong>56.5%</strong> fully vaccinated
+    </div>
+    <div class="measures">
+        <div class="dot halfvaxblue"></div> <strong>79.4%</strong> first dose
+    </div>
+
+
+    <div class="bar grey" style="width:100%">
+        
+        <div class="bar halfvax halfvaxblue" style="width:79.4%"></div>
+        <div class="bar fullvax fullvaxblue" style="width: 56.5%"></div>        
+        <div class="bar target70"><span class="label70">70%</span></div>
+        <div class="bar target80"><span class="label80">80%</span></div>
+
+    </div>
+<br /><br />
+<div>Of estimated population aged 16 and over</div>
+<br />
+    
+
+    <hr />
+
+    <div class="heading-left">New locally acquired cases</div>
+
+    <div class="heading-right"><a href="#">Full Data &gt;</a></div>
+    <br />
+
+    <div class="card"><h3>667</h3> <p>In NSW</p></div>
+
+    <div class="card"><h3>1925</h3> <p>Nationally</p></div>
+</div>
+</div>
+
+
+</body>
+</html>
